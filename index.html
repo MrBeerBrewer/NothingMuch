@@ -14,15 +14,33 @@
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $.ajax({url: "hate.hol.es/goo/input.php", async: false, success: function(result){
-            $("div").html(result);
-        }});
+
+//callback handler for form submit
+$("#ajaxform").submit(function(e)
+{
+    var postData = $(this).serializeArray();
+    var formURL = $(this).attr("action");
+    $.ajax(
+    {
+        url : formURL,
+        type: "POST",
+        data : postData,
+        success:function(data, textStatus, jqXHR) 
+        {
+            //data: return data from server
+        },
+        error: function(jqXHR, textStatus, errorThrown) 
+        {
+            //if fails      
+        }
     });
+    e.preventDefault(); //STOP default action
+    e.unbind(); //unbind. to stop multiple form submit.
 });
+ 
+$("#ajaxform").submit(); //Submit  the FORM
+
 </script>
-</head>
 
   </head>
 
@@ -47,9 +65,11 @@ $(document).ready(function(){
           <p>Bullshit here!</p>
           
           
-<div><h2>Let AJAX change this text</h2></div>
-
-<button>Change Content</button>
+          <form name="ajaxform" id="ajaxform" action="hate.hol.es/goo/input.php" method="POST">
+              First Name: <input type="text" name="fname" value =""/> <br/>
+              Last Name: <input type="text" name="lname" value ="" /> <br/>
+              Email : <input type="text" name="email" value=""/> <br/>
+          </form>
           
         </section>
 
