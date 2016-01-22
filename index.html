@@ -8,11 +8,7 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
 
-<!-- jQuery library -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
 
 <!-- Latest compiled modernizr -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
@@ -46,39 +42,61 @@
 </div>
 
 <div class="row">
-  <div class="large-12 medium-10 small-6 column">
-    <div class="contain-to-grid">
-  <nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone nav>ul>li*4>a-->
-    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-  </ul>
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
 
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class=""><a href="#">Contact</a></li>
-      <li class="has-dropdown">
-        <a href="#"><i class="fi-info"></i>About</a>
-        <ul class="dropdown">
-          <li><a href="#">Portfolio</a></li>
-          <li class=""><a href="#">What we do?</a></li>
-        </ul>
-      </li>
-    </ul>
+      <section class="middle tab-bar-section">
+        <h1 class="title">What do we do?</h1>
+      </section>
 
-    <!-- Left Nav Section -->
-    <ul class="left">
-      <li><a href="#"><i class="fi-home"></i>Home</a></li>
-    </ul>
-  </section>
-</nav>
-</div>
+      <section class="right-small">
+        <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Site Links</label></li>
+        <li><a href="#">Speak with us</a></li>
+        <li><a href="#">Read stuff we write</a></li>
+        <li><a href="#">Portfolio</a></li>
+      </ul>
+    </aside>
+
+    <aside class="right-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>WWW links</label></li>
+        <li><a href="http://stackoverflow.com">Learn Stuff!</a></li>
+        <li><a href="http://google.com">Search Stuff!</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main content -->
+    <section class="main-section text-center">
+      <h3>We are a bunch of talented consultant's across the globe!</h3>
+      <img src="images/logo.png" alt="NothingMuchLogoDidNotRender" class="th radius" id="cus-image-logo">
+      <p>Here are a few thing that we can help you with:</p>
+      <ul class="no-bullet">
+        <li><a href="">HTML Templating</a></li>
+        <li><a href="">Developing Web Applications</a></li>
+        <li><a href="">WordPress, Joomla, Drupal customizations</a></li>
+        <li><a href="">User Interface(UI) and User Experience(UX) Testing</a></li>
+        <li><a href="">Designing stuff.</a></li>
+        <li><a href="">Training</a></li>
+      </ul>
+    </section>
+
+  <a class="exit-off-canvas"></a>
+
   </div>
 </div>
+</div>
 
-
+   
 
 <div class="row">
   <div class="large-4 columns">
@@ -126,36 +144,29 @@
 </div>
 
 
-<div class="row">
-  <div class="large-4 medium-4 small-4 columns">
-    <ul>
-    <li><a href="">Lorem.</a></li>
-    <li><a href="">Ea.</a></li>
-    <li><a href="">Libero!</a></li>
-    <li><a href="">Rem!</a></li>
-  </ul>
-  </div>
-  <div class="large-8 medium-8 small-4 columns">
-  <h4>Please bear with us we are redesigning the website!</h4>
-  </div>
-</div>
 
 <div class="row">
   <div class="large-6 medium-6 small-6 columns">
-  
+    Footer content left
   </div>
   <div class="large-6 medium-6 small-6 columns">
-
+    Footer content right
   </div>
 </div>
- 
+
+<!-- jQuery library -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
 
 
+<!-- Initialize Foundation JS -->
 <script>
-      $(document).foundation();
-    </script>
-
-
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
 
 
 </body>
