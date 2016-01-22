@@ -1,90 +1,160 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Foundation | Welcome</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+<!-- jQuery library -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+
+<!-- Latest compiled modernizr -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Nothingmuch by MrBeerBrewer</title>
 
-
-  </head>
-
-  <body>
-    <div id="container">
-      <div class="inner">
-
-        <header>
-          <h1>Nothingmuch</h1>
-          <h2>NothingMuch, we build stuff and<img src="images/dance1.gif" height="50" width="60"></h2>
-
-          <div class="icon-bar five-up">
-  <a href="#" class="item">
-    <i class="fi-home"></i>
-    <label>Home</label>
-  </a>
-  <a href="#" class="item">
-    <i class="fi-share"></i>
-    <label>Share</label>
-  </a>
-  <a href="#" class="item">
-    <i class="fi-info"></i>
-    <label>Info</label>
-  </a>
-  <a href="#" class="item">
-    <i class="fi-mail"></i>
-    <label>Mail</label>
-  </a>
-  <a href="#" class="item">
-    <i class="fi-magnifying-glass"></i>
-    <label>Search</label>
-  </a>
-</div>
-
-        </header>
-
-
-        <hr>
-
-        <section id="main_content">
-          <div class="row">
-  <h2>NothingMuch we are building stuff!</h2>
-  
-  <div class="row">
-  <div class="large-6 columns">
-    <p>At NothingMuch, we profile talented developers skilled on various domains. We can get them to work on your project real quick!</p><p>Time is money! Speak with us today.</p>
-  </div>
-  <div class="large-6 columns">
-    <p>Wondering how to carryout UserInterface(UI) and UserExperience(UX) tests? Speak with us and we will complete it.</p>
-    <p>Send us a message!</p><p>info [@] nothingmuch [.] in</p>
-  </div>
-</div>
-
-
-          
-
-          
-        </section>
-
-        <footer>
-          Nothingmuch is maintained by <a href="https://github.com/MrBeerBrewer">MrBeerBrewer</a><br>
-          
-        </footer>
-
-        
-      </div>
+</head>
+<body ng-app="">
+ 
+<!-- .row>.large-12.columns>.panel>h2 -->
+<div class="row">
+  <div class="large-12 medium-10 small-6 columns text-center ">
+    <div class="panel">
+      <img src="images/banner1.png" alt="NothingMuchBannerHere" class="banner ">
     </div>
-  </body>
+  </div>
+  
+
+</div>
+
+<div class="row">
+  <div class="large-12 medium-10 small-6 column">
+    <div class="contain-to-grid">
+  <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone nav>ul>li*4>a-->
+    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class=""><a href="#">Contact</a></li>
+      <li class="has-dropdown">
+        <a href="#"><i class="fi-info"></i>About</a>
+        <ul class="dropdown">
+          <li><a href="#">Portfolio</a></li>
+          <li class=""><a href="#">What we do?</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><a href="#"><i class="fi-home"></i>Home</a></li>
+    </ul>
+  </section>
+</nav>
+</div>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="large-4 columns">
+  <form>
+    <fieldset>
+      <legend>Contact Us</legend>
+
+      <label>Did you need help with something?
+         <div class="row collapse postfix-round">
+        <div class="small-9 columns">
+          <input type="text" placeholder="Your message here.">
+        </div>
+        <div class="small-3 columns">
+          <a href="#" class="button postfix">Go</a>
+        </div>
+      </label>
+    </fieldset>
+  </form>
+  </div>
+  <div class="large-6 columns"><p></p>
+    <ul class="example-orbit" data-orbit>
+  <li>
+    <img src="http://lorempixel.com/1024/250/business/9" alt="slide 1" />
+    <div class="orbit-caption">
+      WE ANALYZE YOUR BUSINESS AND SUGGEST YOU OPTIONS.
+    </div>
+  </li>
+  <li class="active">
+    <img src="http://lorempixel.com/1024/250/business/2" alt="slide 2" />
+    <div class="orbit-caption">
+      WE HIRE AND ASSIGN TALENTED DEVELOPERS.
+    </div>
+  </li>
+  <li>
+    <img src="http://lorempixel.com/1024/250/business/7" alt="slide 3" />
+    <div class="orbit-caption">
+      WE HELP YOU WITH UI AND UX TESTS.
+    </div>
+  </li>
+</ul>
+  </div>
+  <div class="large-2 columns">
+  
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="large-4 medium-4 small-4 columns">
+    <ul>
+    <li><a href="">Lorem.</a></li>
+    <li><a href="">Ea.</a></li>
+    <li><a href="">Libero!</a></li>
+    <li><a href="">Rem!</a></li>
+  </ul>
+  </div>
+  <div class="large-8 medium-8 small-4 columns">
+  <h2>Please bear with us we are redesigning the website!</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-6 medium-6 small-6 columns">
+  <div ng-include="'ssButts.htm'"></div>
+  </div>
+  <div class="large-6 medium-6 small-6 columns">
+  
+  
+
+  </div>
+</div>
+ 
+
+
+<script>
+      $(document).foundation();
+    </script>
+
+
+
+
+</body>
 </html>
