@@ -1,0 +1,10 @@
+body{	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2e2e2+0,d1d1d1+47,d1d1d1+47,dbdbdb+50,fefefe+100 */
+background: #e2e2e2; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #e2e2e2 0%, #d1d1d1 47%, #d1d1d1 47%, #dbdbdb 50%, #fefefe 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #e2e2e2 0%,#d1d1d1 47%,#d1d1d1 47%,#dbdbdb 50%,#fefefe 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #e2e2e2 0%,#d1d1d1 47%,#d1d1d1 47%,#dbdbdb 50%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+font-family: 'Chivo', sans-serif;
+}
