@@ -31,6 +31,7 @@ h1, h2,h3,h4,h5,h6, .top-bar>li>a{
   padding: 2rem 4rem;
   text-align: center;
   color: #fff;
+  height: 400px;
 }
 .footer i {
   font-size: 100px;
