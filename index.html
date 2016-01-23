@@ -8,7 +8,7 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
 
 <!-- Latest compiled modernizr -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
@@ -17,12 +17,7 @@
 
 <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
-
 <link rel="stylesheet" href="stylesheets/ssButts.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js">
-
 <link rel="stylesheet" href="stylesheets/overRide.css">
 
 
@@ -173,7 +168,7 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
 
 
-<!-- Initialize Foundation JS -->
+<!-- Initialize Foundation JS and other JQ JS stuff-->
 <script>
 
 var tStart = 200 // Start transition 200px from top
@@ -190,7 +185,7 @@ $(document).ready(function() {
         p = Math.min(1, Math.max(0, p)); // Clamp to [0, 1]
         var cBg = [Math.round(cStart[0] + cDiff[0] * p), Math.round(cStart[1] + cDiff[1] * p), Math.round(cStart[2] + cDiff[2] * p)];
         $("body").css('background-color', 'rgb(' + cBg.join(',') +')');
-        $("li>a").css('color', '#000');
+        $("li>a").css('color', '#000'); //Show some love to li elems
     });
 
 
