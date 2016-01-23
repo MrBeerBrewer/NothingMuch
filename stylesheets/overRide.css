@@ -19,6 +19,9 @@ h1, h2,h3,h4,h5,h6, .top-bar>li>a{
 }
 
 #map {
-                width: auto;
-                height: auto;
+                  margin: 0px;
+    padding: 0px
+    min-height: 250px;
+    height: 350px;
+    max-height: 750px;
             }
