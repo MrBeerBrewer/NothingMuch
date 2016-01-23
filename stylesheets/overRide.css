@@ -19,6 +19,6 @@ h1, h2,h3,h4,h5,h6, .top-bar>li>a{
 }
 
 #map {
-                width: 550px;
-                height: 500px;
+                width: auto;
+                height: auto;
             }
