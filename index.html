@@ -21,6 +21,8 @@
 
 <link rel="stylesheet" href="stylesheets/ssButts.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js">
+
 <link rel="stylesheet" href="stylesheets/overRide.css">
 
 
@@ -171,9 +173,28 @@
 
 <!-- Initialize Foundation JS -->
 <script>
+
 $(document).ready(function() {
     $(document).foundation();
+    
+  var scroll_pos = 0;
+    $(document).scroll(function() { 
+
+        scroll_pos = $(this).scrollTop();
+        if(scroll_pos > 800) {
+            $("body").removeClass().addClass('purp');
+        } else if (scroll_pos > 1000 && scroll_pos < 1500) {
+            $("body").removeClass('purp').addClass('oran');
+        }
+        else{
+            $("body").removeClass('oran').addClass('blue1');
+        }
+    });
+
+      
 })
+
+
 </script>
 
 
