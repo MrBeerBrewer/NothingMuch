@@ -17,3 +17,5 @@ h1, h2,h3,h4,h5,h6, .top-bar>li>a{
 	border-radius: 45px;
 	height: 80px; width: 80px;
 }
+
+#map { height: 45%; width: 45%; }
