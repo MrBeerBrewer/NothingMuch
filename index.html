@@ -24,7 +24,9 @@
 
 </head>
 <body ng-app="">
- 
+
+<a href="#" class="scrollToTop"></a>
+
 <!-- .row>.large-12.columns>.panel>h2 -->
 <div class="row full-width">
   <div class="large-12 medium-10 small-6 columns text-center ">
@@ -217,6 +219,21 @@ $(document).ready(function() {
         $("body").css('background-color', 'rgb(' + cBg.join(',') +')');
         $("li>a").css('color', '#000'); //Show some love to li elems
     });
+
+    //Check to see if the window is top if not then display button
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 200) {
+      $('.scrollToTop').fadeIn();
+    } else {
+      $('.scrollToTop').fadeOut();
+    }
+  });
+  
+  //Click event to scroll to top
+  $('.scrollToTop').click(function(){
+    $('html, body').animate({scrollTop : 0},800);
+    return false;
+  });
 
 
 })
