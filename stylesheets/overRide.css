@@ -24,4 +24,5 @@ h1, h2,h3,h4,h5,h6, .top-bar>li>a{
     min-height: 250px;
     height: 350px;
     max-height: 750px;
+    border-radius: 56px; 
             }
