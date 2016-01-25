@@ -14,7 +14,9 @@
 
             //alert($(this).attr('id')); 
                   var sel = $(this).attr('id');
-                  if (sel ==1) { $('#element_to_pop_up').bPopup(); }
+                  if (sel ==1) { $('#element_to_pop_up').bPopup({
+                    transition(‘fadeIn’); 
+                  }); }
                   else if (sel==2) {$('#element_to_pop_up1').bPopup();}
                   else if (sel==3) {$('#element_to_pop_up2').bPopup();}
                   else if (sel==4) {$('#element_to_pop_up3').bPopup();}
