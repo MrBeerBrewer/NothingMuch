@@ -25,19 +25,27 @@
                   speed: 550,
                   transition: 'slideIn'
                   });}
-                  else if (sel==3) {$('#element_to_pop_up2').bPopup({
-                    
+                  else if (sel==3) {$('#element_to_pop_up2').bPopup({ 
                   easing: 'easeInBounce', 
                   speed: 850,
                   transition: 'slideUp'                    
                   });}
                   else if (sel==4) {$('#element_to_pop_up3').bPopup({
                   easing: 'easeOutCirc', 
-                  speed: 1500,
-                  transition: 'fadeIn'   
+                  speed: 1000,
+                  transition: 'slideDown'   
                   });}
-                  else if (sel==5) {$('#element_to_pop_up4').bPopup();}
-                  else { $('#element_to_pop_up5').bPopup();}
+                  else if (sel==5) {$('#element_to_pop_up4').bPopup({
+                  easing: 'easeOutBack', 
+                  speed: 777,
+                  transition: 'slideIn'  
+                  });}
+                  else { $('#element_to_pop_up5').bPopup({
+                  modalColor: #e100ff , 
+                  easing: 'easeInBounce', 
+                  speed: 1200,
+                  transition: 'slideUp' 
+                  });}
 
                 });
 
