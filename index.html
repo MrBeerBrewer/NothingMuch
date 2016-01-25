@@ -15,12 +15,14 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
+<!-- jQuery library -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="javascripts/pops.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" href="stylesheets/ssButts.css">
 <link rel="stylesheet" href="stylesheets/overRide.css">
-
-
 
 </head>
 <body ng-app="">
@@ -80,14 +82,17 @@
       <h3>We are a bunch of talented consultant's across the globe!</h3>
       <img src="images/logo.png" alt="NothingMuchLogoDidNotRender" class="th radius" id="cus-image-logo">
       <p>Here are a few thing that we can help you with:</p>
-      <ul class="no-bullet">
-        <li><a href="">HTML Templating</a></li>
-        <li><a href="">Developing Web Applications</a></li>
-        <li><a href="">WordPress, Joomla, Drupal customizations</a></li>
-        <li><a href="">User Interface(UI) and User Experience(UX) Testing</a></li>
-        <li><a href="">Designing stuff.</a></li>
-        <li><a href="">Training</a></li>
+      <ul class="no-bullet" id="midlinks">
+        <li><a href="#" id="1">HTML Templates</a></li>
+        <li><a href="" id="2">Developing Web Applications</a></li>
+        <li><a href="" id="3">WordPress, Joomla, Drupal customizations</a></li>
+        <li><a href="" id="4">User Interface(UI) and User Experience(UX) Testing</a></li>
+        <li><a href="" id="5">Designing stuff.</a></li>
+        <li><a href="" id="6">Training</a></li>
       </ul>
+    
+    <div ng-include="'pops.htm'"></div>
+    
     </section>
 
   <a class="exit-off-canvas"></a>
@@ -205,12 +210,11 @@
   </div>
 </div>
 
-<!-- jQuery library -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/foundation/6.1.2/js/foundation.reveal.js"></script>
 
 <!-- Initialize Foundation JS and other JQ JS stuff-->
 <script>
