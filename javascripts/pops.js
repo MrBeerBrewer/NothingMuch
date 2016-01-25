@@ -15,9 +15,7 @@
             //alert($(this).attr('id')); 
                   var sel = $(this).attr('id');
                   if (sel ==1) { $('#element_to_pop_up').bPopup({
-                    fadeSpeed: 'slow', //can be a string ('slow'/'fast') or int
-                    followSpeed: 1500, //can be a string ('slow'/'fast') or int
-                    modalColor: 'greenYellow',
+                    
                   easing: 'easeOutBack', //uses jQuery easing plugin
                   speed: 450,
                   transition: 'slideDown'
