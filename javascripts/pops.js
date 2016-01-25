@@ -33,7 +33,7 @@
                   });}
                   else if (sel==4) {$('#element_to_pop_up3').bPopup({
                   easing: 'easeOutCirc', 
-                  speed: 850,
+                  speed: 1500,
                   transition: 'fadeIn'   
                   });}
                   else if (sel==5) {$('#element_to_pop_up4').bPopup();}
