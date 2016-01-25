@@ -12,7 +12,7 @@
             // Prevents the default action to be triggered. 
                 e.preventDefault();
 
-            //alert($(this).attr('id')); 
+            //alert($(this).attr('id'));  https://jqueryui.com/resources/demos/effect/easing.html
                   var sel = $(this).attr('id');
                   if (sel ==1) { $('#element_to_pop_up').bPopup({     
                   easing: 'swing', 
