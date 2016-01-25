@@ -17,7 +17,8 @@
                   if (sel ==1) { $('#element_to_pop_up').bPopup({     
                   easing: 'swing', 
                   speed: 550,
-                  transition: 'slideDown'
+                  transition: 'slideDown',
+                  modalColor: 'greenYellow'
                   }); }
                   else if (sel==2) {$('#element_to_pop_up1').bPopup({
                   easing: 'easeOutBack', 
