@@ -15,12 +15,16 @@
             //alert($(this).attr('id')); 
                   var sel = $(this).attr('id');
                   if (sel ==1) { $('#element_to_pop_up').bPopup({
-                    
-                  easing: 'easeOutBack', //uses jQuery easing plugin
-                  speed: 450,
+                      
+                  easing: 'swing', 
+                  speed: 550,
                   transition: 'slideDown'
                   }); }
-                  else if (sel==2) {$('#element_to_pop_up1').bPopup();}
+                  else if (sel==2) {$('#element_to_pop_up1').bPopup({
+                  easing: 'easeOutBack', 
+                  speed: 550,
+                  transition: 'slideIn'
+                  });}
                   else if (sel==3) {$('#element_to_pop_up2').bPopup();}
                   else if (sel==4) {$('#element_to_pop_up3').bPopup();}
                   else if (sel==5) {$('#element_to_pop_up4').bPopup();}
