@@ -41,7 +41,6 @@
                   transition: 'slideIn'  
                   });}
                   else { $('#element_to_pop_up5').bPopup({
-                  modalColor: #e100ff , 
                   easing: 'easeInBounce', 
                   speed: 1200,
                   transition: 'slideUp' 
