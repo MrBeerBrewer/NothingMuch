@@ -31,7 +31,11 @@
                   speed: 850,
                   transition: 'slideUp'                    
                   });}
-                  else if (sel==4) {$('#element_to_pop_up3').bPopup();}
+                  else if (sel==4) {$('#element_to_pop_up3').bPopup({
+                  easing: 'easeOutCirc', 
+                  speed: 850,
+                  transition: 'fadeIn'   
+                  });}
                   else if (sel==5) {$('#element_to_pop_up4').bPopup();}
                   else { $('#element_to_pop_up5').bPopup();}
 
