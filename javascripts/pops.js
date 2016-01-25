@@ -29,7 +29,7 @@
                     
                   easing: 'easeInElastic', 
                   speed: 850,
-                  transition: 'slideBack'                    
+                  transition: 'slideUp'                    
                   });}
                   else if (sel==4) {$('#element_to_pop_up3').bPopup();}
                   else if (sel==5) {$('#element_to_pop_up4').bPopup();}
