@@ -27,7 +27,7 @@
                   });}
                   else if (sel==3) {$('#element_to_pop_up2').bPopup({
                     
-                  easing: 'easeInElastic', 
+                  easing: 'easeInBounce', 
                   speed: 850,
                   transition: 'slideUp'                    
                   });}
