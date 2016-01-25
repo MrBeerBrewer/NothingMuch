@@ -14,8 +14,7 @@
 
             //alert($(this).attr('id')); 
                   var sel = $(this).attr('id');
-                  if (sel ==1) { $('#element_to_pop_up').bPopup({
-                      
+                  if (sel ==1) { $('#element_to_pop_up').bPopup({     
                   easing: 'swing', 
                   speed: 550,
                   transition: 'slideDown'
@@ -36,12 +35,12 @@
                   transition: 'slideDown'   
                   });}
                   else if (sel==5) {$('#element_to_pop_up4').bPopup({
-                  easing: 'easeOutBack', 
+                  easing: 'easeInOutCubic', 
                   speed: 777,
                   transition: 'slideIn'  
                   });}
                   else { $('#element_to_pop_up5').bPopup({
-                  easing: 'easeInBounce', 
+                  easing: 'easeInOutQuint', 
                   speed: 1200,
                   transition: 'slideUp' 
                   });}
