@@ -202,17 +202,9 @@ var tStart = 200 // Start transition 200px from top
 $(document).ready(function() {
     $(document).foundation();
     
-    $(document).scroll(function() {
-        var p = ($(this).scrollTop() - tStart) / (tEnd - tStart); // % of transition
-        p = Math.min(1, Math.max(0, p)); // Clamp to [0, 1]
-        var cBg = [Math.round(cStart[0] + cDiff[0] * p), Math.round(cStart[1] + cDiff[1] * p), Math.round(cStart[2] + cDiff[2] * p)];
-        $("body").css('background-color', 'rgb(' + cBg.join(',') +')');
-        $("li>a").css('color', '#000'); //Show some love to li elems
-    });
-
-    //Check to see if the window is top if not then display button
+  //Check to see if the window is top if not then display button
   $(window).scroll(function(){
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 250) {
       $('.scrollToTop').fadeIn();
     } else {
       $('.scrollToTop').fadeOut();
@@ -221,7 +213,7 @@ $(document).ready(function() {
   
   //Click event to scroll to top
   $('.scrollToTop').click(function(){
-    $('html, body').animate({scrollTop : 0},800);
+    $('html, body').animate({scrollTop : 0}, 1250);
     return false;
   });
 
