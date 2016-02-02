@@ -5,12 +5,12 @@ body{
     min-height: 2000px;
     Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fceabb+0,fccd4d+50,f8b500+51,fbdf93+100;Orange+3D+%235 */
 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100 */
-background: #a90329; /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedbe9+0,419ad6+0,3a8bc2+53,26558b+100 */
+background: #cedbe9; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #cedbe9 0%, #419ad6 0%, #3a8bc2 53%, #26558b 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #cedbe9 0%,#419ad6 0%,#3a8bc2 53%,#26558b 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #cedbe9 0%,#419ad6 0%,#3a8bc2 53%,#26558b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 
     font-family: 'Chivo', sans-serif;
