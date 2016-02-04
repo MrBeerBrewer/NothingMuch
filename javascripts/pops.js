@@ -40,11 +40,6 @@
                   speed: 777,
                   transition: 'slideIn'  
                   });}
-                  else if (sel=='conus') {$('#conus').bPopup({
-                  easing: 'easeInOutCubic', 
-                  speed: 777,
-                  transition: 'slideIn'  
-                  });}
                   else { $('#element_to_pop_up5').bPopup({
                   easing: 'easeInOutQuint', 
                   speed: 1200,
@@ -57,7 +52,7 @@
 
     })(jQuery);
 
-/*================================================================================conus
+/*================================================================================
  * @name: bPopup - if you can't get it up, use bPopup
  * @author: (c)Bjoern Klinggaard (twitter@bklinggaard)
  * @demo: http://dinbror.dk/bpopup
