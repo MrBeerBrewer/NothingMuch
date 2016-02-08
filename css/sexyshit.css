@@ -132,7 +132,7 @@ body {
 }
 
 
-#myCarousel{
+#myCarousel, .carousel-inner, .item{
   /* default fallback */
 background: rgb(255, 255, 255) transparent;
 /* nice browsers */
