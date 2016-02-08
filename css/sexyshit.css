@@ -131,3 +131,7 @@ body {
   transform: rotateX(0deg) translateY(-40px) translateZ(40px);
 }
 
+myCarousel{
+  opacity: 0.6;
+  
+}
