@@ -132,7 +132,7 @@ body {
 }
 
 
-#myCarousel, .carousel-inner, .item{
+#myCarousel > div > img{
   /* default fallback */
 background: rgb(255, 255, 255) transparent;
 /* nice browsers */
@@ -144,4 +144,4 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endCo
 
 opacity: 0.5; 
 
-}
+} 
