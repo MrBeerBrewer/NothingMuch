@@ -1,5 +1,6 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
 
 .button span:nth-child(1), .button:hover span:nth-child(2), .button:hover span:nth-child(3), .button:active span:nth-child(3) {
   color: #fff;
@@ -16,9 +17,14 @@
 html,
 body {
   height: 100%;
-  font: bold 18px "Lobster", Arial, sans-serif;
+  font: 20px 'Old Standard TT', serif;
+
   color: #ff7;
 
+}
+
+h1, h2, h3, h4, h5, h6, strong, .navbar, .foot {
+  font: bold 24px "Lobster", Arial, sans-serif;
 }
 
 .button {
@@ -132,16 +138,11 @@ body {
 }
 
 
-#myCarousel > div > img{
-  /* default fallback */
-background: rgb(255, 255, 255) transparent;
-/* nice browsers */
-background: rgba(255, 255, 255, 0.8);
-/* IE 6/7 */
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF);
-/* IE8 */    
--ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF)";
+#about{
+  min-height: 500px; 
+}
 
-opacity: 0.5; 
+#contact{
+  min-height: 500px; 
+}
 
-} 
