@@ -131,7 +131,17 @@ body {
   transform: rotateX(0deg) translateY(-40px) translateZ(40px);
 }
 
-myCarousel{
-  opacity: 0.6;
-  
+
+#myCarousel{
+  /* default fallback */
+background: rgb(255, 255, 255) transparent;
+/* nice browsers */
+background: rgba(255, 255, 255, 0.8);
+/* IE 6/7 */
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF);
+/* IE8 */    
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCFFFFFF)";
+
+opacity: 0.5; 
+
 }
