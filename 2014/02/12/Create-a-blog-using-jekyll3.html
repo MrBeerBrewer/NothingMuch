@@ -72,10 +72,52 @@
 
 <!-- End of naivgation -->
 
-	<div>
-	<h1>Contact</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt delectus, esse dolorum, et doloremque ab quo, debitis similique dolore exercitationem aut perferendis. Labore cupiditate quas facilis obcaecati, in possimus.</p>
+	<div class="container">
+<h1> Create a blog post using Jekyll 3.1.1 </h1>
+
+<div class="humra-share-buttonwa-hai-babbua">
+               <h1><i class="fa fa-heart fa-2x"></i> us more!</h1>
+               <a href="https://twitter.com/intent/tweet?text=Create a blog post using Jekyll 3.1.1&amp;url=http://nothingmuch.in/2014/02/12/Create-a-blog-using-jekyll3.html&amp;via=NoMuInc&amp;related=NoMuInc" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter"></i></a>
+               <a href="https://facebook.com/sharer.php?u=http://nothingmuch.in/2014/02/12/Create-a-blog-using-jekyll3.html" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-official"></i></a>
+               <a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=Create a blog post using Jekyll 3.1.1&amp;url=http://nothingmuch.in/2014/02/12/Create-a-blog-using-jekyll3.html&amp;source=NothingMuch" target="_blank" title="Share this post on LinkedIn"><i class="fa fa-linkedin"></i></a>
+               <a href="https://plus.google.com/share?url=http://nothingmuch.in/2014/02/12/Create-a-blog-using-jekyll3.html" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus"></i></a>
+</div> <!-- Butt end -->
+
+<p>Welcome to our page. In this very first blog-post you will learn how to create a blog-post using Jekyll 3.1.1</p>
+
+<p>Jekyll is a powerful static website generator! It has loads of features that make it very usable.</p>
+<p>Assuming, Jekyll is installed you must navigate to _posts folder and create a file that looks like this:</p>
+
+<pre>
+---
+layout: main
+title: "Create a blog post using Jekyll 3.1.1"
+Keywords: Jekyll3, Blog, Create
+
+I love you more than LoLlYpOp! Yummy! &lt;3
+
+---
+</pre>
+
+<p>Jekyll uses a front matter to define YAML content. Begin and end your page with three dashes(---) and define variables.</p>
+<p>Below the Front matter block write anything you love to post. That's it! Now issues a jekyll serve and you'll have a web-page. Assuming you have many posts, you'll use a for loop to iterate through them using the url attribute available in the posts global variable as seen below.</p>
+
+<pre>
+		  { % for post in site.posts % }
+		      Loop through whatever you need here ... post.url or post.keywords etc
+		  { % endfor % }
+</pre>
+
+<p>Note: Do not use a space between the { and % symbols. In this case, I've put a space intentionally.</p>
+
+<p>That's how you create a post in Jekyll. If you did not follow along, don't worry. :) Check the video below.</p>
+
+<h2>Video: Creating a blog post in Jekyll</h2>
+<h4>Coming soon.</h4>
+Jekyll3, Blog, Create, Front matter
+
 </div>
+
 
 <!-- fotter -->
 
