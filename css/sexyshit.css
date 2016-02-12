@@ -46,8 +46,6 @@ h1, h2, h3, h4, h5, h6, strong, .navbar, .foot {
 }
 
 .button {
-  
-  
   cursor: pointer;
   text-decoration: none;
   text-shadow: 0 1px 1px #004d55;
@@ -60,6 +58,7 @@ h1, h2, h3, h4, h5, h6, strong, .navbar, .foot {
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+
 .button span {
   display: block;
   border: 1px solid #004d55;
@@ -69,6 +68,7 @@ h1, h2, h3, h4, h5, h6, strong, .navbar, .foot {
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
 .button span:nth-child(1) {
   -webkit-transform-origin: bottom center;
   -moz-transform-origin: bottom center;
@@ -81,6 +81,7 @@ h1, h2, h3, h4, h5, h6, strong, .navbar, .foot {
   -o-transform: rotateX(0deg);
   transform: rotateX(0deg);
 }
+
 .button span:nth-child(2) {
   -webkit-transform-origin: top center;
   -moz-transform-origin: top center;
@@ -93,6 +94,7 @@ h1, h2, h3, h4, h5, h6, strong, .navbar, .foot {
   -o-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
+
 .button span:nth-child(3) {
   -webkit-transform-origin: top center;
   -moz-transform-origin: top center;
