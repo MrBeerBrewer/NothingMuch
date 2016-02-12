@@ -208,6 +208,29 @@ strong,
     color: #daf224;
 }
 
-#blogLinks{
+#blogLinks, #midlinks{
     list-style-type: none;
 }
+
+/* Pops */
+
+
+  #element_to_pop_up, #element_to_pop_up1, #element_to_pop_up2, #element_to_pop_up3, #element_to_pop_up4, #element_to_pop_up5{ 
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    min-width: 450px;
+    padding: 25px;
+    z-index: 9191;
+    opacity: .5;
+
+  }
+
+  .b-close{
+      cursor:pointer;
+      position:absolute;
+      right:10px;
+      top:5px;
+  }
