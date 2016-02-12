@@ -1,17 +1,28 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 @import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
+ /*@import url(https://fonts.googleapis.com/css?family=Anton); font-family: 'Anton', sans-serif;*/
 
 .button span:nth-child(1), .button:hover span:nth-child(2), .button:hover span:nth-child(3), .button:active span:nth-child(3) {
-  color: #fff;
-  background: #0ab;
+  color: #000;
+  /*background: #52565b;  Non hover state nav butt */
   box-shadow: 0 20px 40px rgba(153, 0, 82, 0.6);
+  border-radius: 8px;
+  padding: 2px;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,d1d1d1+51,fefefe+100;Grey+Gloss+%231 */
+background: #e2e2e2; /* Old browsers */
+background: -moz-linear-gradient(top,  #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+
 }
 
 .button span:nth-child(2), .button span:nth-child(3), .button:hover span:nth-child(1), .button:active span:nth-child(2) {
   color: #666666;
-  background: #004d55;
-  box-shadow: none;
+  background: #000; /* Hover state nav butt */
+  box-shadow: none;border-radius: 8px;
 }
 
 html,
@@ -19,20 +30,19 @@ body {
   height: 100%;
   font: 20px 'Old Standard TT', serif;
 
-  color: #ff7;
+  color: #001;
 
-background-size: 50px 50px;
-background-color: #0ae;
-background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
--pie-background: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent) 0 0 / 50px #0ae;
-behavior: url(/pie/PIE.htc);
 
+
+}
+
+a{
+  color: #F6E883;
 }
 
 h1, h2, h3, h4, h5, h6, strong, .navbar, .foot {
   font: bold 24px "Lobster", Arial, sans-serif;
+  color: #001;
 }
 
 .button {
@@ -156,8 +166,21 @@ h1, h2, h3, h4, h5, h6, strong, .navbar, .foot {
 
 .navbar-inverse{
   background: transparent;
+  border: none;
 }
 
-.navbar-brand > img{
-  border-radius: 25px;
+
+
+.bx-wrapper{
+  border-radius: 6px;
 }
+
+/*  This shit centers the nav bar!! I give up not working on smaller viewports. 
+    .navbar-brand {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 160px;
+    text-align: center;
+    
+} */
