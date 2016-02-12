@@ -207,3 +207,7 @@ strong,
 .fa {
     color: #daf224;
 }
+
+#blogLinks{
+    list-style-type: none;
+}
