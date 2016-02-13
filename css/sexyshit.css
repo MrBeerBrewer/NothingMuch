@@ -3,7 +3,7 @@
 /*@import url(https://fonts.googleapis.com/css?family=Anton); font-family: 'Anton', sans-serif;*/
 
 
-#bra{
+.bra{
     border-radius: 30px;
     
 }
@@ -185,9 +185,28 @@ strong,
     background: transparent;
     border: none;
 }
-.bx-wrapper {
-    border-radius: 6px;
+
+.bx-viewport, .bx-wrapper{
+    border-radius: 26px;
+    opacity: 1;
+        -webkit-box-shadow: 12px 12px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 12px 6px 0px  rgba(0,0,0,0.75);
+    box-shadow: 12px 12px 6px 0px  rgba(0,0,0,0.75);
 }
+
+.bx-viewport:hover, .bx-wrapper:hover{
+    -webkit-box-shadow: 0px 0px 6px 1px #ffff00;
+    -moz-box-shadow: 0px 0px 6px 1px #ffff00;
+    box-shadow: 0px 0px 6px 1px #ffff00;
+    -webkit-transition: all 1s linear;
+    -o-transition: all 2s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -kthtml-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+
 /*  This shit centers the nav bar!! I give up not working on smaller viewports. 
     .navbar-brand {
     position: absolute;
@@ -216,6 +235,16 @@ strong,
 
 .fa {
     color: #daf224;
+    margin: 5px; 
+    padding: 5px;
+    color: #000;
+}
+
+.fa:hover{
+    color: red;
+    margin: 5px; 
+    padding: 5px;
+    color: #000;
 }
 
 #blogLinks, #midlinks{
