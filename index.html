@@ -78,7 +78,7 @@
 
 <!-- End of naivgation -->
 
-	<div class="container-fluid">
+	<div class="container">
 <a href="#" class="scrollToTop" style="display: inline;"></a>
 
 <div class="row">
@@ -99,14 +99,24 @@
                </a> --> 
             <div class="humra-share-buttonwa-hai-babbua">
                <h1><i class="fa fa-heart fa-2x"></i> us more!</h1>
-               <a href="https://twitter.com/intent/tweet?text=&url=http://nothingmuch.in/&via=NoMuInc&related=NoMuInc" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter"></i></a>
-               <a href="https://facebook.com/sharer.php?u=http://nothingmuch.in/" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-official"></i></a>
-               <a href="http://www.linkedin.com/shareArticle?mini=true&title=&url=http://nothingmuch.in/&source=NothingMuch" target="_blank" title="Share this post on LinkedIn"><i class="fa fa-linkedin"></i></a>
-               <a href="https://plus.google.com/share?url=http://nothingmuch.in/" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus"></i></a>
+               <ul class="list-unstyled">
+               	<li>
+               		<a href="https://twitter.com/intent/tweet?text=&url=http://nothingmuch.in/&via=NoMuInc&related=NoMuInc" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter"></i></a>
+               	</li>
+               	<li>
+               		<a href="https://facebook.com/sharer.php?u=http://nothingmuch.in/" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-official"></i></a>
+               	</li>
+               	<li>
+               		<a href="http://www.linkedin.com/shareArticle?mini=true&title=&url=http://nothingmuch.in/&source=NothingMuch" target="_blank" title="Share this post on LinkedIn"><i class="fa fa-linkedin"></i></a>
+               	</li>
+               	<li>
+               		<a href="https://plus.google.com/share?url=http://nothingmuch.in/" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus"></i></a>
+               	</li>
+               </ul>               
 </div> <!-- Butt end -->
          </div>
          <div class=".col-xs-6 col-md-6 .col-sm-6">
-            <ul class="bxslider animated bounce">
+            <ul class="bxslider animated bounce text-center">
                <li><img src="images/reviews/abhansali.png" alt="abhansali" width="650" height="250"></li>
                <li>        <img src="images/reviews/adzdacom.png" alt="adzdacom" width="650" height="250"></li>
                <li>        <img src="images/reviews/aforecaster.png" alt="aforecaster" width="650" height="250"></li>
@@ -142,7 +152,7 @@
                <li>        <img src="images/reviews/webprops.png" alt="webprops" width="650" height="250"></li>
             </ul>
          </div>
-         <div class=".col-xs-3 col-md-3 .col-sm-3">
+         <div class=".col-xs-3 col-md-3 .col-sm-3 text-center">
          <img alt="affiliate-commision-refer-earn-easypay-money" class="" 
                        id="affiliate-commision-refer-earn-easypay-money" 
                        src="/images/affiliate-commision-refer-earn-easypay-money.png">
@@ -291,16 +301,19 @@ $('.bxslider').bxSlider({
 
   //Check to see if the window is top if not then display button
   $(window).scroll(function(){
-    if ($(this).scrollTop() > 1250) {
+    if ($(this).scrollTop() > 250) {
       $('.scrollToTop').fadeIn();
+      $('.scrollToTop').css({ visibility: "visible"});
     } else {
       $('.scrollToTop').fadeOut();
+
     }
   });
   
   //Click event to scroll to top
   $('.scrollToTop').click(function(){
     $('html, body').animate({scrollTop : 4}, 150);
+
     return false;
   });
 
@@ -316,7 +329,7 @@ $('.bxslider').bxSlider({
 
 
 <footer class="foot">
-<p class="text-center small"><a href="http://nothingmuch.in ">NothingMuch</a>, &copy 2016-02-13 04:25:35 +0530</p>
+<p class="text-center small"><a href="http://nothingmuch.in ">NothingMuch</a>, &copy 2016-02-13 09:50:26 +0530</p>
 </footer>
 
 <script type="text/javascript">

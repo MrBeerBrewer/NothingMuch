@@ -12,7 +12,9 @@ a:hover, li a:hover, ul li:hover{
     color: #000;
 }
 
-
+.nav navbar-nav{
+    overflow: hidden;
+}
 
 .button span:nth-child(1),
 .button:hover span:nth-child(2),
@@ -259,6 +261,7 @@ strong,
     display:none;
     background: url("/images/top.png") no-repeat 0px 20px;
     z-index: 9999; 
+    visibility: hidden;
 }
 .scrollToTop:hover{
     text-decoration:none;
