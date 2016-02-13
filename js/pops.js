@@ -18,33 +18,37 @@
                   easing: 'swing', 
                   speed: 550,
                   transition: 'slideDown',
-                  modalColor: 'greenYellow'
+                  modalColor: 'blue'
                   }); }
                   else if (sel==2) {$('#element_to_pop_up1').bPopup({
                   easing: 'easeOutBack', 
                   speed: 550,
                   transition: 'slideIn',
-                  modalColor: 'blueWhite'
+                  modalColor: 'pink'
                   });}
                   else if (sel==3) {$('#element_to_pop_up2').bPopup({ 
                   easing: 'easeInBounce', 
                   speed: 850,
-                  transition: 'slideUp'                    
+                  transition: 'slideUp',
+                  modalColor: 'yellow'                    
                   });}
                   else if (sel==4) {$('#element_to_pop_up3').bPopup({
                   easing: 'easeOutCirc', 
                   speed: 1000,
-                  transition: 'slideDown'   
+                  transition: 'slideDown',
+                  modalColor: 'greenYellow'     
                   });}
                   else if (sel==5) {$('#element_to_pop_up4').bPopup({
                   easing: 'easeInOutCubic', 
                   speed: 777,
-                  transition: 'slideIn'  
+                  transition: 'slideIn',
+                  modalColor: 'red'    
                   });}
                   else { $('#element_to_pop_up5').bPopup({
                   easing: 'easeInOutQuint', 
                   speed: 1200,
-                  transition: 'slideUp' 
+                  transition: 'slideUp',
+                  modalColor: 'cyan'   
                   });}
 
                 });
