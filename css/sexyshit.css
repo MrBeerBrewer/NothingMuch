@@ -14,12 +14,8 @@ a:hover, li a:hover, ul li:hover{
 
 .container{
     background-image: url('/images/halftone.png');
-    opacity: .5;
 }
 
-.inner{
-    opacity: 1;
-}
 .nav navbar-nav{
     overflow: hidden;
 }
