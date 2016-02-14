@@ -2,7 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
 /*@import url(https://fonts.googleapis.com/css?family=Anton); font-family: 'Anton', sans-serif;*/
 
-
+.container{
+    width: 800px;
+    opacity: .6;
+}
 .bra{
     border-radius: 30px;
     
