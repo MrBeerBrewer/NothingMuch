@@ -8,6 +8,9 @@
     
 }
 
+.ads{
+    z-index: 9910;
+}
 
 .container{
     background-image: url('/images/halftone.png');
