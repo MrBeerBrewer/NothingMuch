@@ -152,6 +152,8 @@ strong,
 
   }
 
+  #element_to_pop_up > * {text-decoration: none;}
+
   .b-close{
       cursor:pointer;
       position:absolute;
