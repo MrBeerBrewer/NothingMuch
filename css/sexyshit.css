@@ -22,8 +22,11 @@ body {
     height: 100%;
     font: 20px 'Old Standard TT', serif;
     color: #001;
+    text-decoration: none;
 }
-a{color: #002;}
+
+a{color: #0d8add;}
+
 h1,
 h2,
 h3,
