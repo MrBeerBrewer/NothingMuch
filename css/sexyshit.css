@@ -400,11 +400,12 @@ figcaption {
 
 .navbar , .navbar-default{
     margin-top: 5px;
-    opacity: .4;
+    opacity: .5;
     background: #3d3535; 
 }
 
 .navbar:hover , .navbar-default:hover{
-    opacity: .9;
-    background: #33ea9e; 
+    opacity: .8;
+    background: #33ea9e;
+    border: 2px solid #b51af2;
 }
