@@ -529,19 +529,6 @@ strong,
 
 /* bs */
 
-body {
-    background-color: #f6f6f6;
-    background-image: -webkit-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,0) 50%,
-                      hsla(0,0%,0%,.015) 50%, hsla(0,0%,0%,.015) 100%),
-                      -webkit-radial-gradient(hsla(0,0%,0%,.05) 10%, transparent 15%);
-    background-size: 1.5em 1.5em, .5em .5em;
-    font-family: sans-serif;
-    font-size: 100%;
-    line-height: 1.5;
-    margin: 0 auto;
-    padding: 1.5em;
-    width: 45em;
-}
 figure {
     float: left;
     height: 3em;
