@@ -14,10 +14,10 @@ a:hover, li a:hover, ul li:hover{
 
 .container{
     background-image: url('/images/halftone.png');
-    opacity: .6;
+    opacity: .5;
 }
 
-div.container *{
+.inner{
     opacity: 1;
 }
 .nav navbar-nav{
