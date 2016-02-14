@@ -18,7 +18,7 @@ a:hover, li a:hover, ul li:hover{
 
 
 .navbar-inverse {
-    
+    background: transparent;
     border: none;
 }
 
@@ -66,7 +66,7 @@ a:hover, li a:hover, ul li:hover{
 }
 
 .fa:hover, .fa-2x:hover{
-    color: #f46464;
+    font-size: 45px; color: #f46464;
 }
 
 #blogLinks, #midlinks{
