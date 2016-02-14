@@ -3,8 +3,9 @@
 /*@import url(https://fonts.googleapis.com/css?family=Anton); font-family: 'Anton', sans-serif;*/
 
 .container{
-    width: 800px;
-    opacity: .6;
+    width: 950px;
+    opacity: .4;
+    background: #00f;
 }
 .bra{
     border-radius: 30px;
