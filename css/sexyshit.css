@@ -17,7 +17,7 @@ a:hover, li a:hover, ul li:hover{
     opacity: .6;
 }
 
-.container *{
+.container > *{
     opacity: 1;
 }
 .nav navbar-nav{
