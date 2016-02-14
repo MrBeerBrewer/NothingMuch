@@ -398,7 +398,7 @@ figcaption {
     font-weight: 100;
 }
 
-.navbar{
+.navbar , .navbar-default{
     margin-top: 5px;
     opacity: .7;
 }
