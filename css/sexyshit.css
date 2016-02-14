@@ -105,21 +105,6 @@ strong,
 }
 
 
-/*  This shit centers the nav bar!! I give up not working on smaller viewports. 
-    .navbar-brand {
-    position: absolute;
-    left: 50%;
-    display: block;
-    width: 160px;
-    text-align: center;
-    
-} */
-/* Share the shit outta ya **/
-
-.humra-share-buttonwa-hai-babbua {
-    text-align: center;
-}
-
 .fa, .fa-2x {
     margin: 5px; 
     padding: 5px;
@@ -138,7 +123,9 @@ strong,
 /* Pops */
 
 
-  #element_to_pop_up, #element_to_pop_up1, #element_to_pop_up2, #element_to_pop_up3, #element_to_pop_up4, #element_to_pop_up5{ 
+  #element_to_pop_up, #element_to_pop_up1, 
+  #element_to_pop_up2, #element_to_pop_up3, 
+  #element_to_pop_up4, #element_to_pop_up5{ 
     background-image: url('/images/halftone.png');
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 0 25px 5px #999;
@@ -147,7 +134,7 @@ strong,
     min-width: 450px;
     max-width: 650px;
     padding: 25px;
-    z-index: 9191;
+    z-index: 9911;
     
 
   }
@@ -163,13 +150,6 @@ strong,
 
 /*Back to top */
 .scrollToTop{
-    width:60px; 
-    height:110px;
-    padding:10px; 
-    text-align:center; 
-    background: whiteSmoke;
-    font-weight: bold;
-    color: #444;
     text-decoration: none;
     position:fixed;
     bottom:25px;
@@ -432,7 +412,7 @@ strong,
 /* bs */
 
 figure {
-    float: left;
+    
     height: 3em;
     margin: 1.5em;
     width: 8em;
@@ -444,7 +424,7 @@ figure:hover {
     -webkit-transform: perspective(500) rotateX(90deg) translateY(-3em) translateZ(3em);
 }
 img {
-    background-color: #222;
+    background-color: #0d8;
     box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
     display: block;
     height: 100%;
@@ -470,7 +450,7 @@ figcaption {
     width: 300px;
     height: 200px;
     margin: 10px;
-    float: left;
+ 
     border: 0;
     overflow: hidden;
     position: relative;
