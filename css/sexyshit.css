@@ -87,7 +87,7 @@ strong,
 .bx-viewport, .bx-wrapper{
     border-radius: 26px;
     opacity: 1;
-        -webkit-box-shadow: 12px 12px 6px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 12px 12px 6px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 12px 12px 6px 0px  rgba(0,0,0,0.75);
     box-shadow: 12px 12px 6px 0px  rgba(0,0,0,0.75);
 }
