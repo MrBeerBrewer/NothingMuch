@@ -7,10 +7,7 @@
     border-radius: 30px;
     
 }
-a:hover, li a:hover, ul li:hover{
-    text-decoration: none;
-    color: #000;
-}
+
 
 .container{
     background-image: url('/images/halftone.png');
