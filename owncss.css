@@ -308,6 +308,10 @@ a{
 	text-decoration: none;
 	color: #000;
 }
+
+p{
+  color: #000;
+}
   .b-close{
       cursor:pointer;
       position:absolute;
