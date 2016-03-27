@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript" 
+         src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+               $.getJSON('http://api.icndb.com/jokes/random/', function(jd) {
+                  //$('#stage').html(jd.value['joke']);
+
+                  var myObject = new Object();
+                  myObject.name = jd.value['joke'];
+                  var myString = JSON.stringify(myObject);
+                  $('#stage').html(myString);
+               });	
+         });
+      </script>
+   </head>
+	
+   <body>
+      <div id = "stage"></div>
+   </body>
+</html>
