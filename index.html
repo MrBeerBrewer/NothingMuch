@@ -35,6 +35,7 @@
 
 </head>
 <body>
+ 
 <script type="text/javascript">
 $(document).ready(function(){
     $('.bxslider').bxSlider();
@@ -273,16 +274,7 @@ div class="clear">
 <div class="col-12 col-12-tablet col-12-desktop col-12-hd footer">
       NothingMuch, &copy 2016-17, Maintained by Santosh
 </div> 
-          <table id="GeoResults"></table>
-        <script>
-        $.getJSON("http://ip-api.com/json/?callback=?", function(data) {
-            var table_body = "";
-            $.each(data, function(k, v) {
-                table_body += "<tr><td>" + k + "</td><td><b>" + v + "</b></td></tr>";
-            });
-            $("#GeoResults").html(table_body);
-        });
-        </script>
+
 
 <script>
   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
