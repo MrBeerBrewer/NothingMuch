@@ -268,21 +268,16 @@ $(document).ready(function(){
         </div>
 
 </div>
+
+<div class="clear">
+<div class="col-12 col-12-tablet col-12-desktop col-12-hd" id="userDets">
+dets here
+</div> 
+
     </div>
 </div>
 
-<div class="col-12 col-12-tablet col-12-desktop col-12-hd" id="userDets">
-<table id="GeoResults"></table>
-        <script>
-        $.getJSON("http://ip-api.com/json/?callback=?", function(data) {
-            var table_body = "";
-            $.each(data, function(k, v) {
-                table_body += "<tr><td>" + k.toUpperCase() + "</td><td><b>" + v + "</b></td></tr>";
-            });
-            $("#GeoResults").html(table_body);
-        });
-        </script>
-</div> 
+
 
 <div class="clear">
 <div class="col-12 col-12-tablet col-12-desktop col-12-hd footer">
