@@ -287,10 +287,10 @@ $(document).ready(function(){
             var ref = new Firebase("https://santoshj.firebaseio.com/web/saving-data/fireblog");
                 var postsRef = ref.child("UserDetails");
                 var newPostRef = postsRef.push();
-                var str = JSON.stringify(data);
+                
                 // we can also chain the two calls together
                 postsRef.push().set({
-                  str1
+                  table_body
                 }); //End of fire
 
         }); // End of getJSON call
