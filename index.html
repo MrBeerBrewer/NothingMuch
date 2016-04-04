@@ -280,7 +280,7 @@ $(document).ready(function(){
             var x;
             $.each(data, function(k, v) {
                 table_body += "<tr><td>" + k.toUpperCase() + "</td><td><b>" + v + "</b></td></tr>";
-                x = data.toString();
+                x = JSON.stringify(data);
                 var ref = new Firebase("https://santoshj.firebaseio.com/web/saving-data/fireblog");
                 var postsRef = ref.child("posts");
 
