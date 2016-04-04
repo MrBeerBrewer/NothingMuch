@@ -323,7 +323,7 @@ p{
 	display: none;
   /* End pops */}
 
-#about, #contact{
+#about, #contact, #userDets{
   border: 1px solid #fff;
 }
 
