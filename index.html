@@ -280,8 +280,13 @@ $(document).ready(function(){
             var x;
             $.each(data, function(k, v) {
                 table_body += "<tr><td>" + k.toUpperCase() + "</td><td><b>" + v + "</b></td></tr>";
-                x = JSON.stringify(data);
-                var ref = new Firebase("https://santoshj.firebaseio.com/web/saving-data/fireblog");
+                
+            });//End foreach
+
+            $("#GeoResults").html(table_body);
+
+            x = JSON.stringify(data);
+            var ref = new Firebase("https://santoshj.firebaseio.com/web/saving-data/fireblog");
                 var postsRef = ref.child("posts");
 
                 var newPostRef = postsRef.push();
@@ -290,9 +295,7 @@ $(document).ready(function(){
                 postsRef.push().set({
                   x
                 }); //End of fire
-            });//End foreach
 
-            $("#GeoResults").html(table_body);
         }); // End of getJSON call
 
         </script>
