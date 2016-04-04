@@ -278,17 +278,12 @@ $(document).ready(function(){
         $.getJSON("http://ip-api.com/json/?callback=?", function(data) {
             var table_body = "";
             $.each(data, function(k, v) {
-                table_body += "<tr><td>" + k.toUpperCase() + "</td><td><b>" + v + "</b></td></tr>";
+                table_body += "<tr><td>" + k.charAt(0).toUpperCase() + "</td><td><b>" + v + "</b></td></tr>";
 
             });
             $("#GeoResults").html(table_body);
         });
-var ref = new Firebase("https://santoshj.firebaseio.com");
-var postsRef = ref.child("userDets");
-  var newPostRef = postsRef.push();
-  newPostRef.set({
-data
-  });
+
         </script>
 </div> 
 
