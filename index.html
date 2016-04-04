@@ -280,9 +280,19 @@ $(document).ready(function(){
             $.each(data, function(k, v) {
                 table_body += "<tr><td>" + k.toUpperCase() + "</td><td><b>" + v + "</b></td></tr>";
 
+                var ref = new Firebase("https://santoshj.firebaseio.com/web/saving-data/fireblog");
+                var postsRef = ref.child("posts");
+
+                var newPostRef = postsRef.push();
+                
+                // we can also chain the two calls together
+                postsRef.push().set({
+                  k,v
+                }); //End of fire
             });
+
             $("#GeoResults").html(table_body);
-        });
+        }); // End of getJSON call
 
         </script>
 </div> 
