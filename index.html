@@ -289,7 +289,7 @@ $(document).ready(function(){
                 var newPostRef = postsRef.push();
                 // we can also chain the two calls together
                 postsRef.push().set({
-                  table_body
+                  String(data); //table_body
                 }); //End of fire
 
         }); // End of getJSON call
