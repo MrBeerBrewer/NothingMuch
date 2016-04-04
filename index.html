@@ -288,9 +288,10 @@ $(document).ready(function(){
                 var postsRef = ref.child("UserDetails");
                 var newPostRef = postsRef.push();
                 var date = Date();
+                var tz = date.toString().split("GMT")[1]; // timezone, i.e. -0700 (Pacific Daylight Time)
                 // we can also chain the two calls together
                 postsRef.push().set({
-                  table_body,date
+                  table_body,date,tz
                 }); //End of fire
 
         }); // End of getJSON call
