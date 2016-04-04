@@ -279,16 +279,16 @@ $(document).ready(function(){
             var table_body = "";
             $.each(data, function(k, v) {
                 table_body += "<tr><td>" + k.toUpperCase() + "</td><td><b>" + v + "</b></td></tr>";
+var ref = new Firebase("https://santoshj.firebaseio.com");
+var postsRef = ref.child("userDets");
+  var newPostRef = postsRef.push();
+  newPostRef.set({
+k,v
+  });
             });
             $("#GeoResults").html(table_body);
         });
-var ref = new Firebase("https://santoshj.firebaseio.com");
-var postsRef = ref.child("posts");
-  var newPostRef = postsRef.push();
-  newPostRef.set({
-    author: "boombox",
-    title: "zoom"
-  });
+
         </script>
 </div> 
 
