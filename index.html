@@ -277,7 +277,6 @@ $(document).ready(function(){
         <script>
         $.getJSON("http://ip-api.com/json/?callback=?", function(data) {
             var table_body = "";
-            var x;
             $.each(data, function(k, v) {
                 table_body += "<tr><td>" + k.toUpperCase() + "</td><td><b>" + v + "</b></td></tr>";
                 
@@ -285,15 +284,12 @@ $(document).ready(function(){
 
             $("#GeoResults").html(table_body);
 
-            x = JSON.stringify(data);
             var ref = new Firebase("https://santoshj.firebaseio.com/web/saving-data/fireblog");
-                var postsRef = ref.child("posts");
-
+                var postsRef = ref.child("UserDetails");
                 var newPostRef = postsRef.push();
-                
                 // we can also chain the two calls together
                 postsRef.push().set({
-                  x
+                  table_body
                 }); //End of fire
 
         }); // End of getJSON call
