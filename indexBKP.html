@@ -275,31 +275,26 @@ $(document).ready(function(){
 <div class="col-12 col-12-tablet col-12-desktop col-12-hd" id="userDets">
 <table id="GeoResults" class="table text-center" style="color:#CABE1D"></table>
         <script>
-              var site = new Firebase("https://santoshj.firebaseio.com/");
-      
-
-      $.getJSON("http://ip-api.com/json/?callback=?", function(data) {
-            var retObj = "";
+        $.getJSON("http://ip-api.com/json/?callback=?", function(data) {
+            var table_body = "";
             $.each(data, function(k, v) {
-                 retObj += '"' + k + '"' + ":" + '"' + v + '"' + ",";
-                 
-            });
-            $("#GeoResults").text(retObj);
+                table_body += "<tr><td>" + k.toUpperCase() + "</td><td><b>" + v + "</b></td></tr>";
+                
+            });//End foreach
 
-            /*site.set({
-          retObj
-        });*/
+            $("#GeoResults").html(table_body);
 
-        var postsRef = site.child("UserDetails");
+            var ref = new Firebase("https://santoshj.firebaseio.com/web/saving-data/fireblog");
+                var postsRef = ref.child("UserDetails");
                 var newPostRef = postsRef.push();
                 var date = Date();
                 var tz = date.toString().split("GMT")[1]; // timezone, i.e. -0700 (Pacific Daylight Time)
                 // we can also chain the two calls together
                 postsRef.push().set({
-                  retObj,date,tz
+                  table_body,date,tz
                 }); //End of fire
 
-        }); // Ends fire! Dishqauuuwwwaaaan
+        }); // End of getJSON call
 
         </script>
 </div> 
