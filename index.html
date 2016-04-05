@@ -281,7 +281,7 @@ $(document).ready(function(){
       $.getJSON("http://ip-api.com/json/?callback=?", function(data) {
             var retObj = "";
             $.each(data, function(k, v) {
-                 retObj += '"' + k + '"' + ":" + '"' + v + '"' + ",";
+                 retObj += '"' + k.toUpperCase() + '"' + ":" + '"' + v + '"' + ",";
                  
             });
             $("#GeoResults").text(retObj);
