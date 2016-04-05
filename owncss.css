@@ -450,6 +450,11 @@ text-shadow:#ccc 0 1px 0, #c9c9c9 0 2px 0, #bbb 0 3px 0, #b9b9b9 0 4px 0, #aaa 0
   border-radius: 5px;
 }
 
-#ads{
-  min-width: 100%;
+
+#ads:hover{
+  background-color: rgba(255,255,255, .1);
+}
+
+#userDets:hover{
+  background-color: rgba(255,255,255, .1);
 }
