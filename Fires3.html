@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">	
+	<title>Fire</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_enable_interest_ads = "true";
+amzn_assoc_tracking_id = "nothi0f-20";
+amzn_assoc_ad_mode = "auto";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_emphasize_categories = "16261631";
+amzn_assoc_linkid = "d6efab047f3946381e31f444526773ea";
+amzn_assoc_fallback_mode = {"type":"search","value":"Earn"};
+amzn_assoc_default_category = "All";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    	var db1 = new Firebase("https://cnj1.firebaseio.com/");
+        var res = "";
+        var dispRes = "";
+
+        //Init get
+    	$.getJSON("http://ip-api.com/json/?callback=?", function(data) {
+
+            $.each(data, function(k, v) {
+                 res += k + ":" + v + ","
+                 dispRes += "-" + v ;        
+            });
+            $("#userDetails").text(dispRes);
+        }); // Ends JSONget
+
+        $( "#reg" ).click(function() {
+          var firstName = $('#firstName').val();
+          var lastName = $('#last').val();
+          var email = $('#email').val();
+          var postsRef = db1.child("users");
+              postsRef.push().set({
+                Name: firstName,
+                Last: lastName,
+                Email: email,
+                udets: res
+              });
+        }); //End reg click
+    
+}); //Ends main
+
+            /*db1.set({
+              res
+            });*/
+</script>
+
+<form id="register">
+<h1>Register Love!!</h1>
+  <fieldset> 
+    <legend>Personal details</legend> 
+        <input id="firstName" name="firstName" type="text" placeholder="Firstname" required autofocus> 
+        <input id="last" name="last" type="text" placeholder="Lastname"> 
+        <input id="email" name="email" type="text" placeholder="Email"> 
+        <button type=submit id="reg">Save</button>
+    </legend>
+  </fieldset>
+<div id="userDetails"></div>
+</body>
+</html>
